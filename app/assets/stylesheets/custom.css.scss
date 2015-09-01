@@ -1,6 +1,8 @@
 @import "bootstrap";
 
 
+
+
 html {
     overflow-y: scroll;
 }
@@ -103,4 +105,11 @@ footer ul {
 footer ul li{
     float:left;
     margin-left: 10px;
+}
+
+.jumbotron {
+  background-image: url("20150901_230659.jpg");
+  background-size: cover;
+  background-position: center 60%;
+  color: #fff
 }
