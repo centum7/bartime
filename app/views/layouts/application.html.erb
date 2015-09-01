@@ -1,29 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>full_title( yield (:title))</title>
-    <%= stylesheet_link_tag    "application", media: "all",
-                                "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-    <%= csrf_meta_tags %>
-</head>
+    <head>
+      <title><%= full_title( yield (:title)) %></title>
+        <%= stylesheet_link_tag    "application", media: "all",
+                                    "data-turbolinks-track" => true %>
+        <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+        <%= csrf_meta_tags %>
+    </head>
     <body>
-        <header class="navbar navbar-fixed-top navbar-inverse">
-            <div class="navbar-inner">
-                <div class="container">
-                    <%= link_to "みかん ","#",id:"logo" %>
-                        <nav>
-                            <ul class="nav pull-rig">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Help</a></li>
-                        </nav>
-                </div>
-            </div>
-        </header>
+        <%= render'layouts/header' %>
+
             <div class="container">
                 <%= yield %>
+                <%= render 'layouts/footer' %>
             </div>
-
-
     </body>
 </html>
