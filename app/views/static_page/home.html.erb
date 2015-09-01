@@ -1,9 +1,12 @@
 <% provide(:title,'Home') %>
-  <title>会津飲み屋営業時間| <%= yield(:title)</title>
+<div>
+  <title>会津飲み屋営業時間| <%= yield(:title) %> </title>
 
-  <h1>Sample App</h1>    
+  <h1> 会津若松の飲み屋営業時間Map ホームページ</h1>    
   <p>
-    会津若松の飲み屋営業時間Map ホームページ<br>
+    <br>
       <a href="https://www.google.co.jp/maps/place/%E3%80%92965-0871+%E7%A6%8F%E5%B3%B6%E7%9C%8C%E4%BC%9A%E6%B4%A5%E8%8B%A5%E6%9D%BE%E5%B8%82%E6%A0%84%E7%94%BA/@37.4961479,139.9308263,18z/data=!3m1!4b1!4m2!3m1!1s0x5ff554a0c56025df:0x61a8a016ce720241">googleMap</a>
     sample application.
   </p>
+</div>
+<%= link_to image_tag("icon2.png",alt:"icon"),'http://google.com' %>
