@@ -1,0 +1,9 @@
+<ul>
+  <% @shops.each do |shop| -%>
+      <li>
+            店舗名:<%= shop.name %><br>
+            <%= image_tag(shop.shop_image) %>
+            <%= link_to "食べログ",shop.url_outsite %>
+      </li>
+  <% end -%>
+</ul>

@@ -1,4 +1,5 @@
 class ShopsController < ApplicationController
-  def new
+  def show
+      @shops = Shop.all
   end
 end
