@@ -2,8 +2,14 @@
   <% @shops.each do |shop| -%>
   <li>
     <h3><%= shop.name %></h3><br>
-    <%= image_tag(shop.shop_image) %>
-    <%= link_to "食べログ",shop.url_home %>
+    <div class="show_image">
+      <%=image_tag(shop.shop_image)%>
+    </div>
+    <% if shop.url_home == nil %>
+    <%= link_to "ぐるなび",shop.url_outsite %>
+    <% else %>
+    <%= link_to "ホームページ",shop.url_home %>
+    <% end %>
   </li>
   <% end -%>
 </ul>
