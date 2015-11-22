@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  shop_id: MyString
+  sun_time: MyString
+  mon_time: MyString
+  tue_time: MyString
+  web_time: MyString
+  thu_time: MyString
+  fri_time: MyString
+  sta_time: MyString
+
+two:
+  shop_id: MyString
+  sun_time: MyString
+  mon_time: MyString
+  tue_time: MyString
+  web_time: MyString
+  thu_time: MyString
+  fri_time: MyString
+  sta_time: MyString
