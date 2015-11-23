@@ -1,7 +1,7 @@
 BarOpeningHoursAizu::Application.routes.draw do
 
-  get "open_time/new"
-  get "open_time/belongs"
+  get "opentimes/new"
+  get "opentimes/timetest"
   get "shops/new"
   root  'static_page#home'
   match '/help',    to: 'static_page#help',    via: 'get'

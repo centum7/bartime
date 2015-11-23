@@ -1,7 +1,6 @@
-class CreateOpenTimes < ActiveRecord::Migration
+class CreateOpentimes < ActiveRecord::Migration
   def change
-    create_table :open_times do |t|
-      t.string :shop_id
+    create_table :opentimes do |t|
       t.string :sun_time
       t.string :mon_time
       t.string :tue_time
