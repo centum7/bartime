@@ -1,6 +1,12 @@
-class CreateOpentimes < ActiveRecord::Migration
+class CreateShopinfos < ActiveRecord::Migration
   def change
-    create_table :opentimes do |t|
+    create_table :shopinfos do |t|
+      t.string :name
+      t.string :url
+      t.string :image
+      t.string :tel
+      t.string :place
+      t.string :image
       t.string :sun_time
       t.string :mon_time
       t.string :tue_time

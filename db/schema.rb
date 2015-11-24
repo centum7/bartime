@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151123144654) do
+ActiveRecord::Schema.define(version: 20151124204457) do
 
   create_table "open_times", force: true do |t|
     t.string   "shop_id"
@@ -27,6 +27,23 @@ ActiveRecord::Schema.define(version: 20151123144654) do
   end
 
   create_table "opentimes", force: true do |t|
+    t.string   "sun_time"
+    t.string   "mon_time"
+    t.string   "tue_time"
+    t.string   "web_time"
+    t.string   "thu_time"
+    t.string   "fri_time"
+    t.string   "sta_time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "shopinfos", force: true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.string   "image"
+    t.string   "tel"
+    t.string   "place"
     t.string   "sun_time"
     t.string   "mon_time"
     t.string   "tue_time"

@@ -1,0 +1,176 @@
+   36  rails
+   37  sudo gem intall rails
+   38  sudo gem install rails
+   44  rails
+   46  rails
+   47  gem install gem search -r rails
+   48  gem install rails
+   49  rails
+  108  rails s
+  118  rails s
+  122  rails s
+  266  rails s
+  270  rails s
+  272  rails s
+  276  rails
+  278  rails s
+  281  rails s
+  287  rails 
+  288  rails s
+  290  rails s
+  299  rails s
+  337  rails s
+  340  rails
+  341  rails s
+  380  rails s
+  392  rails s
+  400  rails s
+  419  rails s
+  426  rails s
+  430  rails s
+  451  rails s
+  474  rails
+  475  rails s
+  506  rails s
+  512  rails s
+  513  rails 
+  514  rails s
+  515  rails 
+  516  rails s
+  518  rails s
+  520  rails s
+  523  rails s
+  529  rails s
+  532  rails s
+  533  rails server -h`
+  534  rails server -h
+  535  rails s -b 0.0.0.0
+  546  rails s
+  547  rails s -b 0.0.0.0
+  552  rails s -b 0.0.0.0
+  575  rails s
+  577  hisotry | grep rails
+  578  history | grep rails
+  579  rails s -b 0.0.0.0
+  594  rails s -b 0.0.0.0
+  596  rails s
+  597  rails s -b 0.0.0.0
+  600  rails s -b 0.0.0.0
+  607  rails s
+  613  rails s
+  620  rails s
+  624  rails s
+  628  rails 
+  629  rails s
+  634  rails s
+  638  rails s
+  640  rails s
+  643  rails s
+  648  rails s
+  660  rails s
+  663  rails s
+  681  rails s
+  682  history | grep rails
+  683  rails s -b 0.0.0.0
+  688  rails s
+  695  rails s
+  704  ls rails s
+  706  cd rails s
+  707  rails s
+  709  rails s
+  711  rails s
+  714  rails console
+  722  rails s
+  726  rails s
+  733  rails s
+  735  rails s
+  744  rails s
+  754  rails s
+  756  rails s
+  758  rails s
+  759  rails c
+  773  rails c
+  775  rails sc
+  776  rails c
+  778  rails s
+  779  rails c
+  789  rails c
+  790  rails g migration remove_shop_to_memo shops
+  792  rails s
+  793  rails g migration remove_memo_to_shop memo
+  795  rails g migration remove_memo_to_shops memo
+  799  rails g migration remove_memo_to_shops memo
+  801  rails g migration remove_memo_shops memo
+  804  rails s
+  805  rails c
+  806  rails g migration remove_memo_to_shops memo
+  814  rails c
+  816  rails generate model Open_time shop_id:string sun_time:string mon_time:string tue_time:string web_time:string thu_time:string fri_time:string sta_time:string
+  819  rails s
+  836  rails s
+  838  rails s
+  840  rails s
+  846  rails s
+  852  rails s
+  853  rails generate controller OpenTime new --no-test-framework
+  854  rails s
+  856  rails s
+  857  rails destroy controller hasmany new
+  858  rails s
+  860  rails destroy model OpenTime new
+  862  rails destroy model Open_Times new
+  863  rails destroy model OpenTimes new
+  864  rails destroy model Open_Time
+  865  rails destroy model Open_Times
+  867  rails s
+  869  rails generate model Openingtime shop_id:string sun_time:string mon_time:string tue_time:string web_time:string thu_time:string fri_time:string sta_time:string
+  870  rails g migration remove_shop_id_to_openingtimes shop_id
+  872  rails s
+  874  rails g destory model Opennigtimes
+  875  rails g destory model openingtims
+  876  rails g destory model openingtim
+  877  rails g destory model openingtimes
+  878  rails destory model openingtimes
+  879  rails g model openingtimes
+  881  rails d model Openingtime
+  882  rails c
+  884  rails c
+  885  rails generate model Opentime sun_time:string mon_time:string tue_time:string web_time:string thu_time:string fri_time:string sta_time:string
+  890  rails s
+  892  rails s
+  893  rails g migration drop_users
+  894  rails g migration drop_open_time
+  895  rails g migration drop_OpenTime
+  896  rails g migration drop_OpenTimes
+  901  history | grep rails
+  902  rails g controller hasmany new --no-test-framework
+  904  rails s
+  907  rails s
+  910  rails s
+  911  rails generate model Openingtime sun_time:string mon_time:string tue_time:string web_time:string thu_time:string fri_time:string sta_time:string
+  912  rails s
+  914  rails s
+  916  rails s
+  919  rails c
+  954  rails d model open_times
+  956  rails d model OpenTtims
+  957  rails d model OpenTimes
+  959  rails d model OpenTime
+  961  rails d model OpenTime new
+  963  rails destroy model Open_Time
+  964  rails destroy model OpenTimes new
+  966  rails destroy model Open_Times new
+  969  rails destroy model Open_Times new
+  971  rails generate model Opentime sun_time:string mon_time:string tue_time:string web_time:string thu_time:string fri_time:string sta_time:string
+  978  rails g controller opentimes
+  979  rails d controller opentimes
+  980  rails d controller opentime
+  981  rails d controller open_time
+  982  rails d controller opentimes
+  983  rails g controller opentimes
+  995  rails s
+  997  rails s
+ 1003  rails s
+ 1005  history |grep rails
+ 1006  history |grep rails > hist-log.txt
+ 1011  history | grep rails > hist-log.txt
