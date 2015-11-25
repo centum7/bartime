@@ -1,29 +1,10 @@
+<% week_day = make_now_week() %>
 <% @open_shop_time.each do |shop_i|%>
 <div id=shop_i_tag>
 
   <p id=shop_i_text>
-    <%= shop_i.name %>
-    <%= shop_i.tel %>
-    <%= link_to "食べログ",shop_i.url %>
-    <%= week_day = make_now_week() %>
-    <%= shop_i.place %>
 
-    <% if week_day == "Sunday"%>
-      <%= shop_i.sun_time %>
-    <% elsif week_day == "Monday" %>
-      <%= shop_i.mon_time %>
-    <% elsif week_day == "Tuesday"%>
-      <%= shop_i.tue_time %>
-    <% elsif week_day == 'Wednesday'%>
-      <%= shop_i.web_time %>
-    <% elsif week_day == "Thursday"%>
-      <%= shop_i.thu_time %>
-    <% elsif week_day == "Friday"%>
-      <%= shop_i.fri_time %>
-    <% elsif week_day == "Saturday"%>
-      <%= shop_i.sta_time %>
-    <% end %>
-    <p>テスト</p>
+    <%= shop_i.place %>
     <% if week_day == "Sunday"%>
       <%= set_time(shop_i.sun_time) %>
     <% elsif week_day == "Monday" %>
@@ -31,7 +12,7 @@
     <% elsif week_day == "Tuesday"%>
       <%= shop_i.tue_time %>
     <% elsif week_day == 'Wednesday'%>
-      <%= st_time,end_time = set_time(shop_i.web_time) %>
+      <p><% st_time,end_time = set_time(shop_i.web_time) %></p>
     <% elsif week_day == "Thursday"%>
       <%= shop_i.thu_time %>
     <% elsif week_day == "Friday"%>
@@ -39,11 +20,18 @@
     <% elsif week_day == "Saturday"%>
       <%= shop_i.sta_time %>
     <% end %>
+
+    <% if st_time != nil%>
+      <%= shop_i.name %>
+      <%= shop_i.tel %>
+      <%= link_to "食べログ",shop_i.url %>
+      営業時間:<%=st_time%> 〜 <%= end_time %>
+    <% end %>
   </p>
 </shop_i_tag>
 <% end %>
 </ul>
 <p>
-現在の時刻
-<%= Time.now %>
+  現在の時刻
+  <%= Time.now %>
 </p>

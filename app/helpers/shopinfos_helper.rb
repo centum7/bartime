@@ -2,8 +2,10 @@ module ShopinfosHelper
   def set_time(week_time)
     start_hour = week_time[0]+ week_time[1]
     start_minute = week_time[2] + week_time[3]
+    start_time =start_hour + start_minute
     end_hour = week_time[4] + week_time[5]
     end_minute = week_time[6] + week_time[7]
+    end_time = end_hour + end_minute
 
     now_time = Time.now + 9.hour
 
@@ -20,9 +22,10 @@ module ShopinfosHelper
       # 営業はスタートしている
       if today_end_time > now_time
         # 営業中
-        return today_start_time,today_end_time
+        return start_time,end_time
       end
     end
+
 
   end
   def make_now_week
