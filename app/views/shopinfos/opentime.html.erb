@@ -8,15 +8,20 @@
   <%= shop_i.name %>
   <%= shop_i.tel %>
   <%= link_to "食べログ",shop_i.url %>
-  <%= shop_i.place %>
-  <%= shop_i.sun_time %>
-  <%= shop_i.mon_time %>
-  <%= shop_i.tue_time %>
-  <%= shop_i.web_time %>
-  <%= shop_i.thu_time %>
-  <%= shop_i.fri_time %>
-  <%= shop_i.sta_time %>
-
+  <% st_time,end_time =  make_open_time(shop_i.sun_time) %>
+  日曜日　営業時間:<%=st_time%> 〜 <%= end_time %>
+  <% st_time,end_time = make_open_time(shop_i.mon_time) %>
+　月曜日  営業時間:<%=st_time%> 〜 <%= end_time %>
+  <% st_time,end_time = make_open_time(shop_i.tue_time) %>
+  火曜日  営業時間:<%=st_time%> 〜 <%= end_time %>
+  <% st_time,end_time = make_open_time(shop_i.web_time) %>
+  水曜日  営業時間:<%=st_time%> 〜 <%= end_time %>
+  <% st_time,end_time = make_open_time(shop_i.thu_time) %>
+  木曜日 営業時間:<%=st_time%> 〜 <%= end_time %>
+  <% st_time,end_time = make_open_time(shop_i.fri_time) %>
+  金曜日  営業時間:<%=st_time%> 〜 <%= end_time %>
+  <% st_time,end_time = make_open_time(shop_i.sta_time) %>
+  土曜日  営業時間:<%=st_time%> 〜 <%= end_time %>
 </p>
 </shop_i_tag>
 <% end %>
