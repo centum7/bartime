@@ -1,0 +1,26 @@
+<%= yield :scripts %>
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <strong>Address:</strong>
+  <%= @user.address %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @user.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @user.longitude %>
+</p>
+
+<p>
+  <strong>Gmaps:</strong>
+  <%= @user.gmaps %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

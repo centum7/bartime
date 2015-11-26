@@ -11,39 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151124204457) do
+ActiveRecord::Schema.define(version: 20151126171855) do
 
-  create_table "open_times", force: true do |t|
-    t.string   "shop_id"
-    t.string   "sun_time"
-    t.string   "mon_time"
-    t.string   "tue_time"
-    t.string   "web_time"
-    t.string   "thu_time"
-    t.string   "fri_time"
-    t.string   "sta_time"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "opentimes", force: true do |t|
-    t.string   "sun_time"
-    t.string   "mon_time"
-    t.string   "tue_time"
-    t.string   "web_time"
-    t.string   "thu_time"
-    t.string   "fri_time"
-    t.string   "sta_time"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "shopinfos", force: true do |t|
+  create_table "storeinfos", force: true do |t|
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "address"
     t.string   "name"
     t.string   "url"
-    t.string   "image"
-    t.string   "tel"
-    t.string   "place"
     t.string   "sun_time"
     t.string   "mon_time"
     t.string   "tue_time"
@@ -55,12 +30,19 @@ ActiveRecord::Schema.define(version: 20151124204457) do
     t.datetime "updated_at"
   end
 
-  create_table "shops", force: true do |t|
+  create_table "stores", force: true do |t|
+    t.float    "latitude"
+    t.float    "langitude"
+    t.string   "address"
     t.string   "name"
-    t.string   "url_home"
-    t.string   "url_outsite"
-    t.string   "memo"
-    t.string   "shop_image"
+    t.string   "url"
+    t.string   "sun_time"
+    t.string   "mon_time"
+    t.string   "tue_time"
+    t.string   "web_time"
+    t.string   "thu_time"
+    t.string   "fri_time"
+    t.string   "sta_time"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

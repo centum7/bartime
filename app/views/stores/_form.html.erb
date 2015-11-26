@@ -1,0 +1,65 @@
+<%= form_for(@store) do |f| %>
+  <% if @store.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@store.errors.count, "error") %> prohibited this store from being saved:</h2>
+
+      <ul>
+      <% @store.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :latitude %><br>
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :langitude %><br>
+    <%= f.text_field :langitude %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :sun_time %><br>
+    <%= f.text_field :sun_time %>
+  </div>
+  <div class="field">
+    <%= f.label :mon_time %><br>
+    <%= f.text_field :mon_time %>
+  </div>
+  <div class="field">
+    <%= f.label :tue_time %><br>
+    <%= f.text_field :tue_time %>
+  </div>
+  <div class="field">
+    <%= f.label :web_time %><br>
+    <%= f.text_field :web_time %>
+  </div>
+  <div class="field">
+    <%= f.label :thu_time %><br>
+    <%= f.text_field :thu_time %>
+  </div>
+  <div class="field">
+    <%= f.label :fri_time %><br>
+    <%= f.text_field :fri_time %>
+  </div>
+  <div class="field">
+    <%= f.label :sta_time %><br>
+    <%= f.text_field :sta_time %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

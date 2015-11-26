@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title><%= full_title( yield (:title)) %></title>
-        <%= stylesheet_link_tag    "application", media: "all",
-                                    "data-turbolinks-track" => true %>
-        <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-        <%= csrf_meta_tags %>
-    </head>
-    <body>
-        <%= render'layouts/header' %>
 
-            <div class="container">
-                <%= yield %>
-                <%= render 'layouts/footer' %>
-            </div>
-    </body>
+
+<head>
+  <title><%= full_title( yield (:title)) %></title>
+  <%= stylesheet_link_tag    "application", media: "all",
+  "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <script type="text/javascript">
+    handler = Gmaps.build('Google');
+    handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+      markers = handler.addMarkers([
+        {
+          "lat": 0,
+          "lng": 0,
+          "picture": {
+            "url": "http://people.mozilla.com/~faaborg/files/shiretoko/firefoxIcon/firefox-32.png",
+            "width":  32,
+            "height": 32
+          },
+          "infowindow": "hello!"
+        }
+      ]);
+      handler.bounds.extendWith(markers);
+      handler.fitMapToBounds();
+    });
+  </script>
+</head>
+<body>
+
+  <%= render'layouts/header' %>
+
+  <div class="container">
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+  </div>
+</body>
+
+
 </html>

@@ -106,6 +106,12 @@ footer ul li{
     float:left;
     margin-left: 10px;
 }
+#map img {
+  max-width: none;
+}
+#map label {
+  width: auto; display:inline;
+} 
 
 .jumbotron {
   background-image: url("20150901_230659.jpg");

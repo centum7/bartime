@@ -1,12 +1,11 @@
-class CreateShopinfos < ActiveRecord::Migration
+class CreateStores < ActiveRecord::Migration
   def change
-    create_table :shopinfos do |t|
+    create_table :stores do |t|
+      t.float :latitude
+      t.float :langitude
+      t.string :address
       t.string :name
       t.string :url
-      t.string :image
-      t.string :tel
-      t.string :place
-      t.string :image
       t.string :sun_time
       t.string :mon_time
       t.string :tue_time

@@ -1,0 +1,49 @@
+<h1>Listing stores</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Latitude</th>
+      <th>Langitude</th>
+      <th>Address</th>
+      <th>Name</th>
+      <th>Url</th>
+      <th>Sun time</th>
+      <th>Mon time</th>
+      <th>Tue time</th>
+      <th>Web time</th>
+      <th>Thu time</th>
+      <th>Fri time</th>
+      <th>Sta time</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @stores.each do |store| %>
+      <tr>
+        <td><%= store.latitude %></td>
+        <td><%= store.langitude %></td>
+        <td><%= store.address %></td>
+        <td><%= store.name %></td>
+        <td><%= store.url %></td>
+        <td><%= store.sun_time %></td>
+        <td><%= store.mon_time %></td>
+        <td><%= store.tue_time %></td>
+        <td><%= store.web_time %></td>
+        <td><%= store.thu_time %></td>
+        <td><%= store.fri_time %></td>
+        <td><%= store.sta_time %></td>
+        <td><%= link_to 'Show', store %></td>
+        <td><%= link_to 'Edit', edit_store_path(store) %></td>
+        <td><%= link_to 'Destroy', store, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Store', new_store_path %>

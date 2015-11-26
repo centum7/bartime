@@ -1,15 +1,13 @@
 BarOpeningHoursAizu::Application.routes.draw do
 
-  get "opentimes/new"
-  get "shopinfos/opentime"
-  get "shopinfos/openshop"
 
-  get "shops/hasmanytest"
-  root  'static_page#home'
+  resources :storeinfos
+
+  root  'storeinfos#index'
   match '/help',    to: 'static_page#help',    via: 'get'
   match '/about',   to: 'static_page#about',   via: 'get'
   match '/contact', to: 'static_page#contact', via: 'get'
-  get "show" =>"shops#show",as:"show"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

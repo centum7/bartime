@@ -1,12 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  latitude: 1.5
+  longitude: 1.5
+  address: MyString
   name: MyString
   url: MyString
-  image: MyString
-  tel: MyString
-  place: MyString
-  image: MyString
   sun_time: MyString
   mon_time: MyString
   tue_time: MyString
@@ -16,12 +15,11 @@ one:
   sta_time: MyString
 
 two:
+  latitude: 1.5
+  longitude: 1.5
+  address: MyString
   name: MyString
   url: MyString
-  image: MyString
-  tel: MyString
-  place: MyString
-  image: MyString
   sun_time: MyString
   mon_time: MyString
   tue_time: MyString
